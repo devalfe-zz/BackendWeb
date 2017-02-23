@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,36 +28,27 @@
 
 <body>
     <!--NOTE: Panel de acceso   -->
-    <div class="container-fluid">
-        <section class="row" id="backIngreso">
-            <div class="panel-heading">
-                <div class="panel-title text-center">
-                    <h3 class="title">Moquegua - Turismo</h3>
-
+    <div class="login-box">
+        <div class="login-logo">
+            <h3><b>Moquegua</b> - Turismo</h3>
+        </div>
+        <div class="login-box-body">
+            <img class="img-login" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <p class="login-box-msg">Sign in to start your session</p>
+            <form action="" method="post">
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="Ingrese su Usuario">
+                    <span class="form-control-feedback"><i class="fa fa-user fa" aria-hidden="true"></i></span>
                 </div>
-            </div>
-            <form method="post" id="formIngreso" class="modal-content">
-                <img id="profile-img" class="profile-img-card" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" />
-                <div class="modal-header">
-                    <h4 class="text-center">Panel de control web - Turismo</h4>
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" placeholder="Ingrese su Contraseña">
+                    <span class="form-control-feedback"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
                 </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                        <input type="text" class="form-control input-lg" placeholder="Ingrese su Usuario" />
-                    </div>
-
-                    <div class="form-group">
-                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                        <input type="password" class="form-control input-lg" placeholder="Ingrese su Contraseña" />
-                    </div>
-
-                    <div class="form-group">
-                        <input type="submit" class="btn btn-block btn-lg btn-primary" value="Iniciar Sesión" />
-                    </div>
+                <div class="form-group  has-feedback">
+                    <input type="submit" class="btn btn-primary btn-block btn-flat" value="Iniciar Sesión" />
                 </div>
             </form>
-        </section>
+        </div>
     </div>
     <!-- end panel  -->
     <script src="js/script.js"></script>
